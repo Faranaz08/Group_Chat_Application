@@ -56,49 +56,20 @@
       <div class="container rounded w-100" id="chat-body">
         <div id="chat-container">
           <div>
-            <h4 class="user-profile">test</h4>
+            <h4 class="user-profile" id="profile"></h4>
             <hr />
           </div>
           <div id="message-container">
             <table class="table table-borderless">
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="others rounded shadow-sm">test: hello</span>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr class="right">
-                  <td></td>
-                  <td>
-                    <span class="you rounded shadow-sm">you: how are you?</span>
-                  </td>
-                </tr>
-                <tr class="right">
-                  <td></td>
-                  <td><span class="you rounded shadow-sm">you: hi</span></td>
-                </tr>
-                <tr class="right">
-                  <td></td>
-                  <td><span class="you rounded shadow-sm">you: hi</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="others rounded shadow-sm">test: hello</span>
-                  </td>
-                  <td></td>
-                </tr>
-                <tr class="right">
-                  <td></td>
-                  <td><span class="you rounded shadow-sm">you: hi</span></td>
-                </tr>
+              <tbody id="table-body">
+               
               </tbody>
             </table>
           </div>
           <div class="form-container">
             <div class="message-send">
-              <form action="" id="send-message">
-                <input type="text" class="form-control" />
+              <form method="POST" id="send-message">
+                <input type="text" class="form-control" name="message" />
                 <button type="submit" class="btn send-btn">
                   <span class="material-symbols-rounded"> send </span>
                 </button>
@@ -108,5 +79,7 @@
         </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./chat.js"></script>
   </body>
 </html>
